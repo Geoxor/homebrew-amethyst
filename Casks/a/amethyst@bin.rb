@@ -1,5 +1,7 @@
 cask "amethyst@bin" do
+  
   arch arm: "-arm64", intel: ""
+  
   version "2.1.1"
   sha256 :no_check
 
@@ -19,11 +21,9 @@ cask "amethyst@bin" do
 
   postflight do
     system_command "/usr/bin/xattr",
-      args: ["-d", "com.apple.quarantine", "#{appdir}/Amethyst.app"],
-      sudo: true
+                   args: ["-d", "com.apple.quarantine", "#{appdir}/Amethyst.app"],
+                   sudo: true
   end
 
-  zap trash: [
-    "~/Library/Application Support/Amethyst",
-  ]
+  zap trash: "~/Library/Application Support/Amethyst"
 end
