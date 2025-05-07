@@ -7,7 +7,7 @@ cask "amethyst@bin" do
   url "https://github.com/Geoxor/Amethyst/releases/download/v#{version}/Amethyst-#{version}#{arch}.dmg"
   name "Amethyst"
   desc "Cross-platform audio player with a node-based audio routing system"
-  homepage "https://amethyst.geoxor.moe/"
+  homepage "https://github.com/Geoxor/Amethyst"
 
   livecheck do
     url :url
