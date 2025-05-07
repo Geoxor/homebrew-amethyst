@@ -1,11 +1,13 @@
 # Amethyst Homebrew Repository
 
-## How do I install amethyst through Homebrew?
+## How do I install amethyst through brew?
 
+```ruby
+tap "geoxor/amethyst"
+install amethyst@bin
 ```
-brew tap "geoxor/amethyst"
-brew install amethyst@bin
-```
+
+## Notice
 
 > [!IMPORTANT]
 > Amethyst will requires one-time sudo grant to prevent Gatekeeper from saying the Application is corrupt for being unsigned.
