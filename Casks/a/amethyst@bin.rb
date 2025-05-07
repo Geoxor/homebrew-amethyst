@@ -17,7 +17,13 @@ cask "amethyst@bin" do
 
   app "Amethyst.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+      args: ["-d", "com.apple.quarantine", "#{appdir}/Amethyst.app"],
+      sudo: true
+  end
+
   zap trash: [
-    "~/Library/Application Support/Amethyst"
+    "~/Library/Application Support/Amethyst",
   ]
 end
