@@ -1,17 +1,20 @@
-# Geoxor Amethyst
+# Amethyst Homebrew Repository
 
-## How do I install these formulae?
+## How do I install amethyst through Homebrew?
 
-`brew install geoxor/amethyst/<formula>`
-
-Or `brew tap geoxor/amethyst` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "geoxor/amethyst"
-brew "<formula>"
 ```
+brew tap "geoxor/amethyst"
+brew install amethyst@bin
+```
+
+> [!IMPORTANT]
+> Amethyst will requires one-time sudo grant to prevent Gatekeeper from saying the Application is corrupt for being unsigned.
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Geoxor/homebrew-amethyst/refs/heads/main/static/gaslight.png"/>
+  <p>Image of Apple gaslighting the user to think the application is corrupt.</p>
+</div>
+
 
 ## Documentation
 
