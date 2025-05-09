@@ -1,7 +1,7 @@
 cask "amethyst@bin" do
   arch arm: "-arm64", intel: ""
 
-  version "2.1.1"
+  version "2.1.2"
   sha256 :no_check
 
   url "https://github.com/Geoxor/Amethyst/releases/download/v#{version}/Amethyst-#{version}#{arch}.dmg"
