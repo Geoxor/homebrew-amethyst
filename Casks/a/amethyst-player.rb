@@ -1,7 +1,7 @@
 cask "amethyst-player" do
   arch arm: "-arm64", intel: ""
 
-  version "2.1.2"
+  version "2.1.3"
 
   on_arm do
     sha256 "3c743301a9a5547e787d5e7ddb3dadc17d9c747e4f85a0b18091b6fc6c09010e"
