@@ -30,6 +30,10 @@ cask "amethyst-player" do
     system_command "/usr/bin/xattr",
                    args: ["-d", "com.apple.quarantine", "#{appdir}/Amethyst.app"],
                    sudo: true
+
+    system_command "/usr/bin/codesign",
+                   args: ["--force", "--deep", "-s", "-", "#{appdir}/Amethyst.app"],
+                   sudo: true
   end
 
   zap trash: "~/Library/Application Support/Amethyst"
