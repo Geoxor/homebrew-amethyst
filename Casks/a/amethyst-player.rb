@@ -1,15 +1,15 @@
 cask "amethyst-player" do
   arch arm: "-arm64", intel: ""
 
-  version "2.1.3"
+  version "2.1.4"
 
   on_arm do
-    sha256 "cd70b290f4cdd3ba20982effea18c616526ed14d08664004abc7f00e39318a64"
+    sha256 "0511b86871fa01bc5c25b0ab0edbb2928926983faa184b8ad3c537779ae9aaee"
 
     depends_on macos: ">= :big_sur"
   end
   on_intel do
-    sha256 "fc122552727001c48ff2f448b37fcf86502342253dac75c315675ac934933f6f"
+    sha256 "3237fd57387cf4ce7e6bea0252bd6e4c468ae2e7bd4d853d288dd3951ef4da6d"
 
     depends_on macos: ">= :mojave"
   end
