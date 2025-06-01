@@ -4,11 +4,11 @@ cask "amethyst-player" do
   version "2.1.7"
   
   on_arm do
-    sha256 "ARM_SHA_HERE"
+    sha256 "72ff1f2539aefb08467b03a33027fb7ad8c09a682fcde5430148a3f0d8138339"
     depends_on macos: ">= :big_sur"
   end
   on_intel do
-    sha256 "INTEL_SHA_HERE"
+    sha256 "bea271807ef9d087a403db440d499d441319e39ae240014072c6c66d87c3628b"
     depends_on macos: ">= :mojave"
   end
 
